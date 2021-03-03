@@ -139,6 +139,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# IORap app launch prefetching using Perfetto traces and madvise
+ro.iorapd.enable=true
+
 # Media
 debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
