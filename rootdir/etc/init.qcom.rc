@@ -214,6 +214,9 @@ on boot
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
+	
+    start vendor.qcrild
+    start vendor.qcrild2
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -367,9 +370,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 	
-    start vendor.qcrild
-    start vendor.qcrild2
-
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
