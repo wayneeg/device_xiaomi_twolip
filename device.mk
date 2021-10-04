@@ -330,7 +330,11 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
-    librmnetctl 
+    librmnetctl
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs	
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
