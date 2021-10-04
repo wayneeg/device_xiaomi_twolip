@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit some common aosp stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit from twolip device
+# Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Some common aosp Properties
@@ -42,9 +42,9 @@ TARGET_FACE_UNLOCK_SUPPORTED = true
 CUSTOM_BUILD_TYPE := OFFICIAL
 
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := twolip
+PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_twolip
+PRODUCT_NAME := aosp_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
 # PixelPlusUI OFFICIAL
