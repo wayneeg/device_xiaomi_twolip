@@ -48,6 +48,11 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := tulip_defconfig
 TARGET_KERNEL_VERSION := 4.19
+KERNEL_LD := LD=ld.lld
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/Image.gz-dtb
+TARGET_KERNEL_HEADERS := kernel/xiaomi/sdm660
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
