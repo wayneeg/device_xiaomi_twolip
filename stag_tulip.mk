@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/stag/config/common.mk)
 
 # Inherit from tulip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Some common aosp Properties
+# Some common stag Properties
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -38,23 +38,15 @@ TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED = true
 
-# OFFICAL STUFF
-CUSTOM_BUILD_TYPE := OFFICIAL
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_tulip
+PRODUCT_NAME := stag_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
-
-# PixelPlusUI OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.ppui.device_name=RedmiNote6Pro \
-    ro.ppui.version=3.9 \
-    ro.ppui.version_code=Eternal \
-    ro.ppui.is_official=true \
-    ro.ppui.maintainer_name=Mustafa
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := tulip
+
+# StagOS stuffs
+WITH_GAPPS := true
