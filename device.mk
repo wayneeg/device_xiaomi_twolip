@@ -14,6 +14,11 @@ OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker \
+    messaging
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay 
