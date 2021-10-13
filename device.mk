@@ -446,7 +446,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
-# Vibrator
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1 \
+    ro.control_privapp_permissions=log
+
+# VNDK
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service	
 	
