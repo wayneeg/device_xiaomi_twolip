@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_twolip.mk
+    $(LOCAL_DIR)/legion_twolip.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_twolip-user \
-    aosp_twolip-userdebug \
-    aosp_twolip-eng
+    legion_twolip-user \
+    legion_twolip-userdebug \
+    legion_twolip-eng
