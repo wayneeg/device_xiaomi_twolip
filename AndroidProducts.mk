@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_twolip.mk
+    $(LOCAL_DIR)/awaken_twolip.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_twolip-user \
-    aosp_twolip-userdebug \
-    aosp_twolip-eng
+    awaken_twolip-user \
+    awaken_twolip-userdebug \
+    awaken_twolip-eng
